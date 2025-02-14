@@ -294,7 +294,9 @@ header img {
 }
 .footer-cta a {
   text-decoration: none;
+  color: white;
   padding: 7px 10px;
+  font-weight: bold;
   border: unset;
   background-color: orangered;
   font-size: 0.8em;
