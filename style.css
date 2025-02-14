@@ -182,13 +182,17 @@ header img {
   text-transform: capitalize;
   transition: 0.5s;
   overflow: hidden;
-}
-.playbtn:hover {
   background: #f60d0d;
   color: #000000;
   box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
+/* .playbtn:hover {
+  background: #f60d0d;
+  color: #000000;
+  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+} */
 
 .playbtn span {
   position: absolute;
@@ -247,7 +251,7 @@ header img {
 }
 .container {
   background-color: rgba(255, 255, 255, 0.96);
-  padding: 5em 2em;
+  padding: 5em 2em 25em 2em;
 }
 
 .card-grid {
@@ -279,26 +283,26 @@ header img {
   color: white;
   text-align: center;
   display: flex;
-  padding: 2.5rem;
+  padding: 2rem;
   position: fixed;
   bottom: 0;
   width: 100%;
   font-weight: bold;
   animation: fadeInUp 2s ease-out;
   z-index: 9999;
+  align-content: center;
   align-items: center;
   justify-content: space-evenly;
-  align-content: center;
   flex-wrap: wrap;
 }
-.timer-container a,
-p {
-  font-size: 1.5rem;
+.timer-container span {
+  font-size: 2rem;
 }
-.footer-cta a {
+.footer-cta > a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 7px 10px;
+  font-size: 1.5rem;
   font-weight: bold;
   border: unset;
   background-color: orangered;
