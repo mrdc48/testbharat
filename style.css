@@ -279,8 +279,7 @@ header img {
   color: white;
   text-align: center;
   display: flex;
-  padding: 2rem;
-  font-size: 1.5rem;
+  padding: 2.5rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -292,6 +291,10 @@ header img {
   align-content: center;
   flex-wrap: wrap;
 }
+.timer-container a,
+p {
+  font-size: 1.5rem;
+}
 .footer-cta a {
   text-decoration: none;
   color: white;
@@ -299,6 +302,5 @@ header img {
   font-weight: bold;
   border: unset;
   background-color: orangered;
-  font-size: 0.8em;
   margin: 0;
 }
