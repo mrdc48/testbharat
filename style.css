@@ -75,7 +75,6 @@ header img {
   font-size: 2rem;
   text-transform: capitalize;
   margin: 1em 0em;
-  font-style: italic;
   color: rgba(255, 255, 255, 0.878);
 }
 .header-content .para::before {
@@ -270,7 +269,7 @@ header img {
   transition: transform 0.3s ease;
 }
 .cards h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.878);
 }
