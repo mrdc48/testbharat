@@ -95,7 +95,8 @@ header img {
     "first second"
     "third fourth"
     "invest invest"
-    "addtional addtional";
+    "addtional addtional"
+    "button button";
 }
 .icon-text:nth-child(1) {
   grid-area: second;
@@ -165,4 +166,50 @@ header img {
 .addtionalInfo > p::before {
   font-size: 1.5rem;
   content: "\2713  ";
+}
+
+.playbtn {
+  grid-area: button;
+  position: relative;
+  display: inline-block;
+  padding: 0.8em;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.playbtn:hover {
+  background: #f60d0d;
+  color: #000000;
+  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.playbtn span {
+  position: absolute;
+  display: block;
+}
+
+.playbtn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: animate1 1s linear infinite;
+}
+
+.playbtn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
 }
