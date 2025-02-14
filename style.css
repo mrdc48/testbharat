@@ -3,10 +3,14 @@
 :before {
   margin: 0;
   padding: 0;
-  font-family: Montserrat, sans-serif;
   font-size: 62%;
   box-sizing: border-box;
+}
+body {
   background-color: black;
+}
+body:not(.icon-text) {
+  font-family: Montserrat, sans-serif;
 }
 header {
   display: block;
@@ -49,10 +53,116 @@ header img {
 .founder > h1 {
   font-weight: bold;
   line-height: 2.7;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 .founder > p {
   font-size: 1.3rem;
   line-height: 1.3;
   color: rgba(255, 255, 255, 0.878);
+}
+.header-content {
+  display: block;
+  border-radius: 10px;
+  padding: 2em;
+}
+.header-content p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
+.header-content .para {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 1em 0em;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.878);
+}
+.header-content .para::before {
+  content: "Make Profits ";
+  font-size: 2rem;
+  margin: 1em 0em;
+  color: #ff4800;
+  text-decoration: underline;
+}
+.iconContainer {
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  background-color: #090909;
+  padding: 10em 5em;
+  grid-template-areas:
+    "first second"
+    "third fourth"
+    "invest invest"
+    "addtional addtional";
+}
+.icon-text:nth-child(1) {
+  grid-area: second;
+}
+.icon-text:nth-child(2) {
+  grid-area: first;
+}
+.icon-text:nth-child(3) {
+  grid-area: fourth;
+}
+.icon-text:nth-child(4) {
+  grid-area: third;
+}
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #212121;
+  padding: 11em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  justify-content: flex-start;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  display: inline-flex;
+}
+.icon-text > p {
+  font-size: 1.3rem;
+}
+.icon-text > i {
+  font-size: 20px;
+  color: white;
+  background-color: unset;
+}
+
+.Invest {
+  grid-area: invest;
+  background-color: #212121;
+  padding: 0.8em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+.addtionalInfo {
+  grid-area: addtional;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.addtionalInfo > p {
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #212121;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.addtionalInfo > p::before {
+  font-size: 1.5rem;
+  content: "\2713  ";
 }
