@@ -326,14 +326,24 @@ header img {
   background: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  padding: 5em;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
   transition: transform 0.3s ease;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 .category h3 {
   font-size: 2rem;
+  text-transform: capitalize;
 }
+
 ul li {
   font-size: 1.6rem;
+  text-transform: capitalize;
   line-height: 1.4;
+  list-style: none;
 }
