@@ -271,6 +271,7 @@ header img {
 }
 .cards h3 {
   font-size: 1.6rem;
+
   font-weight: normal;
   color: rgba(0, 0, 0, 0.878);
 }
@@ -308,4 +309,31 @@ header img {
   border: unset;
   background-color: orangered;
   margin: 0;
+}
+
+/* Scrollable container */
+.scroll-container {
+  margin: 3rem 0rem 10rem 0rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  white-space: nowrap;
+  padding: 2rem;
+}
+
+/* Category styling */
+.category {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.category h3 {
+  font-size: 2rem;
+}
+ul li {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
