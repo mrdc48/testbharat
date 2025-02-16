@@ -325,7 +325,7 @@ header img {
 .category {
   background: rgba(255, 255, 255, 0.934);
   color: #0f0e0e;
-  padding: 4rem;
+  padding: 15px;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -339,7 +339,7 @@ header img {
   margin-bottom: 8px;
   font-size: 2rem;
   color: #ffffff;
-  padding: .5em;
+  padding: 0.5em;
   background-color: orangered;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
