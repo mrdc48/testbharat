@@ -317,7 +317,6 @@ header img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   margin-top: 2rem;
-  margin-bottom: 5rem;
   padding: 7em;
   flex-direction: column;
   backdrop-filter: blur(10px);
@@ -359,7 +358,7 @@ header img {
 
 .pra-container {
   background: rgba(255, 255, 255, 0.934);
-  padding: 5em 2em 20em;
+  padding: 5em 2em 25em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -375,11 +374,10 @@ header img {
   margin-bottom: 2rem;
   line-height: 1.4;
 }
-.pra-container p > strong {
-  margin-bottom: 8px;
+.pra-container li > strong {
   font-size: 1.7rem;
-  color: #ffffff;
-  padding: 0.5em;
-  background-color: orangered;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: #050505;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: orangered;
 }
