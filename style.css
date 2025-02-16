@@ -325,7 +325,7 @@ header img {
 .category {
   background: rgba(255, 255, 255, 0.934);
   color: #0f0e0e;
-  padding: 15px;
+  padding: 4rem;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
