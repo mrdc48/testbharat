@@ -318,7 +318,7 @@ header img {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  padding: 9em;
+  padding: 7em;
   flex-direction: column;
   backdrop-filter: blur(10px);
 }
