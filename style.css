@@ -344,11 +344,13 @@ header img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .category ul {
-  list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
   padding: 0;
 }
+
 .category li {
   padding: 8px 0;
   font-size: 1.6rem;
