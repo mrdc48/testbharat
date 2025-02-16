@@ -317,6 +317,7 @@ header img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   padding: 9em;
   flex-direction: column;
   backdrop-filter: blur(10px);
@@ -337,10 +338,15 @@ header img {
 .category h3 {
   margin-bottom: 8px;
   font-size: 2rem;
-  color: #222;
+  color: #ffffff;
+  padding: 1em;
+  background-color: orangered;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .category ul {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0;
 }
 .category li {
