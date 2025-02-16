@@ -356,3 +356,30 @@ header img {
   font-size: 1.6rem;
   font-weight: 500;
 }
+
+.pra-container {
+  background: rgba(255, 255, 255, 0.934);
+  padding: 5em 2em 20em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.pra-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.pra-container p {
+  font-size: 1.6rem;
+  color: #0d0d0d;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+.pra-container p > strong {
+  margin-bottom: 8px;
+  font-size: 1.9rem;
+  color: #ffffff;
+  padding: 0.5em;
+  background-color: orangered;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
