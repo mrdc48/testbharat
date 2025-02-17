@@ -331,9 +331,9 @@ header img {
   backdrop-filter: blur(5px);
   margin-bottom: 15px;
 }
-.category:hover {
+/* .category:hover {
   transform: translateY(-3px);
-}
+} */
 .category h3 {
   margin-bottom: 8px;
   font-size: 2rem;
