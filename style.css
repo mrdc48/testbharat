@@ -278,37 +278,39 @@ header img {
 .cards:hover {
   transform: translateY(-10px);
 }
-
 .timer-container {
-  background: #040404;
+  width: 100%;
+  background-color: black;
   color: white;
+  padding: 10px 0;
   text-align: center;
-  border-top: 2px solid rgba(255, 255, 255, 0.878);
-  display: flex;
-  padding: 2rem;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.heading {
+  color: #00ff00;
+  font-size: 1.6rem;
   font-weight: bold;
-  animation: fadeInUp 2s ease-out;
-  z-index: 9999;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
-.timer-container span {
-  font-size: 2rem;
-}
-.footer-cta > a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 7px 10px;
+.timer {
   font-size: 1.5rem;
   font-weight: bold;
-  border: unset;
-  background-color: orangered;
-  margin: 0;
+  margin-bottom: 10px;
+}
+.timer-cta {
+  background-color: #ff4500;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: inline-block;
+  width: auto;
+  border-radius: 5px;
 }
 .grid-container {
   display: flex;
@@ -349,7 +351,7 @@ header img {
 }
 
 .faq-container {
-  background: white;
+  background: #fffffff0;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -411,7 +413,7 @@ header img {
 /* General styling for the section */
 .meet-expert-section {
   background-color: #f4f4f4;
-  padding: 50px 20px;
+  padding: 50px 20px 10rem;
   text-align: center;
 }
 
@@ -432,6 +434,7 @@ header img {
   margin-right: auto;
 }
 
+/* Expert's name and credentials styling */
 .expert-info {
   font-size: 1.2rem;
   font-weight: bold;
