@@ -283,6 +283,7 @@ header img {
   background-color: black;
   color: #0d0d0d;
   padding: 10px 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.964);
   text-align: center;
   position: fixed;
   bottom: 0;
