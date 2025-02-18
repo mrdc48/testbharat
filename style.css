@@ -19,9 +19,12 @@ header {
 }
 header img {
   grid-area: image;
+  border-radius: 10px;
+  box-shadow: 0px 4px 100px orangered;
   width: 100%;
+  background-color: rgb(75,23,4);
   max-width: 700px;
-  /* padding: 6em 15em; */
+  padding: 6em 12em;
   object-fit: cover;
 }
 .header-title {
@@ -280,8 +283,8 @@ header img {
 }
 .timer-container {
   width: 100%;
-  background-color: black;
-  color: #0d0d0d;
+  background-color: #0d0d0d;
+  color: white;
   padding: 10px 0;
   border-top: 2px solid rgba(255, 255, 255, 0.964);
   text-align: center;
@@ -301,7 +304,7 @@ header img {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-   color: white;
+  color: white;
 }
 .timer-cta {
   background-color: #ff4500;
