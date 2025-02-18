@@ -281,7 +281,7 @@ header img {
 .timer-container {
   width: 100%;
   background-color: black;
-  color: white;
+  color: #0d0d0d;
   padding: 10px 0;
   text-align: center;
   position: fixed;
