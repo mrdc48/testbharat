@@ -326,7 +326,7 @@ header img {
 }
 .category img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
   border-bottom: 2px solid #ddd;
 }
