@@ -29,3 +29,12 @@ const timerInterval = setInterval(updateTimer, 1000);
 
 // Initialize the timer immediately
 updateTimer();
+
+document.querySelectorAll(".faq-question").forEach((item) => {
+  item.addEventListener("click", () => {
+    const parent = item.parentElement;
+    parent.classList.toggle("active");
+    const icon = item.querySelector("span");
+    icon.textContent = parent.classList.contains("active") ? "-" : "+";
+  });
+});
