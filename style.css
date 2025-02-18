@@ -347,6 +347,44 @@ header img {
   font-size: 14px;
   text-align: center;
 }
+
+.faq-container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 2rem 0.5rem;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.faq-question > span {
+  font-size: 1.7rem;
+}
+.faq-answer {
+  max-height: 0;
+  font-size: 1.5rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding-top: 0;
+  font-size: 14px;
+}
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-top: 10px;
+}
+
 .pra-container {
   background: rgba(255, 255, 255, 0.934);
   padding: 8em 2em 12em;
