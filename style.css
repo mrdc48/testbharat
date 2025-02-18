@@ -373,11 +373,10 @@ header img {
   color: #0d0d0d;
   margin-bottom: 2rem;
   line-height: 1.4;
+  padding-top: 3rem;
 }
 .pra-container p > strong {
   font-size: 1.7rem;
-  padding: 0.2em;
-  border: 4px solid orangered;
   color: #050505;
 }
 /* General styling for the section */
