@@ -22,7 +22,7 @@ header img {
   border-radius: 10px;
   box-shadow: 0px 4px 100px orangered;
   width: 100%;
-  background-color: rgb(75,23,4);
+  background-color: rgb(75, 23, 4);
   max-width: 700px;
   padding: 6em 12em;
   object-fit: cover;
@@ -219,6 +219,40 @@ header img {
   background: linear-gradient(270deg, transparent, #fff);
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
+}
+
+.img-container {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
+.img-container h1 {
+  font-size: 2.7rem;
+  color: #212121;
+  padding-top: 2rem;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-block {
+  /* background: rgb(251, 251, 251); */
+  padding: 2rem;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 .center-text {
   margin-top: 0em;
