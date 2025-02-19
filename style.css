@@ -30,6 +30,7 @@ header img {
 .header-title {
   padding: 0.4em;
   font-size: 2.7rem;
+  margin-bottom: 2rem;
   text-align: center;
   line-height: 1.3;
   text-wrap: wrap;
