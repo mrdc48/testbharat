@@ -242,10 +242,10 @@ header img {
 
 .image-container {
   display: flex;
-  background: #f6f4f4;
   margin-top: 2rem;
   flex-direction: column;
   gap: 10px;
+  background-color: #f6f4f4;
 }
 
 .image-block {
@@ -484,7 +484,6 @@ header img {
   margin-right: auto;
 }
 
-/* Expert's name and credentials styling */
 .expert-info {
   font-size: 1.2rem;
   font-weight: bold;
@@ -495,4 +494,46 @@ header img {
   font-style: italic;
   color: #7f8c8d;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 300px) {
+  *,
+  :after,
+  :before {
+    font-size: 50%;
+  }
+  .playbtn {
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 1.4rem;
+  }
+  .timer-cta {
+    font-size: 1.4rem;
+  }
+  .category .details {
+    grid-template-columns: unset;
+    padding: unset;
+  }
+}
+@media screen and (max-width: 200px) {
+  *,
+  :after,
+  :before {
+    font-size: 30%;
+    word-wrap: break-word;
+  }
+  .detail-box {
+    font-size: 10px;
+    padding: unset;
+  }
+  .category img {
+    height: unset;
+  }
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-text {
+    padding: 1.7rem;
+  }
 }
