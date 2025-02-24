@@ -242,6 +242,7 @@ header img {
 
 .image-container {
   display: flex;
+  background: #f6f4f4;
   margin-top: 2rem;
   flex-direction: column;
   gap: 10px;
