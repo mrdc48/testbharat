@@ -557,23 +557,76 @@ header img {
 @media (min-width: 800px) {
   header {
     display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust columns */
+    grid-template-rows: auto 1fr; /* Ensure rows take space */
     grid-template-areas:
       "img content"
       "founder content";
     grid-gap: 10px;
-    padding: 4rem;
+    padding: 4rem 10rem;
+    height: 100vh; /* Ensure header takes full height */
   }
+
   header img {
     grid-area: img;
-    padding: 8em;
-    height: 350px;
-    object-fit: contain;
+    width: 100%; /* Ensures the image fills its container */
+    height: 100%; /* Makes it take full height */
+    object-fit: cover; /* Ensures it fills the space properly */
+    padding: 3rem; /* Remove extra padding */
   }
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents images from wrapping */
+    gap: 10px; /* Adds spacing between images */
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* Smooth scrolling */
+  }
+
+  .image-block {
+    background: rgb(251, 251, 251);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; /* Ensures images don’t shrink */
+    scroll-snap-align: start; /* Keeps images aligned when scrolling */
+  }
+
+  .image-block img {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover; /* Ensures images are properly cropped */
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+
   .header-content {
     grid-area: content;
   }
   .founder {
     grid-area: founder;
+    margin-top: 4rem;
+  }
+  .grid-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .category {
+    overflow: unset;
+    margin: unset;
+  }
+  .meet-expert-section img {
+    width: 40%;
+    max-width: 150px;
+    margin-bottom: 2rem;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0rem 5rem;
+    justify-items: stretch;
+    align-items: baseline;
+    justify-content: center;
   }
   .iconContainer {
     padding: 10em;
