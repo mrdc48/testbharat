@@ -653,4 +653,10 @@ header img {
   .pra-container p {
     padding: 3rem 10rems;
   }
+  .card-grid {
+    padding: 0rem 19rem;
+  }
+  .container {
+    background-color: rgb(245 235 235 / 96%);
+  }
 }
