@@ -576,6 +576,7 @@ header img {
   header img {
     grid-area: img;
     width: 100%; /* Ensures the image fills its container */
+    max-width: 700px;
     height: 100%; /* Makes it take full height */
     object-fit: cover; /* Ensures it fills the space properly */
     padding: 3rem; /* Remove extra padding */
