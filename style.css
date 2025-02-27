@@ -555,6 +555,11 @@ header img {
   }
 }
 @media (min-width: 800px) {
+  *,
+  :after,
+  :before {
+    font-size: 60%;
+  }
   header {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Adjust columns */
@@ -564,7 +569,6 @@ header img {
       "founder content";
     grid-gap: 10px;
     padding: 4rem 10rem;
-    height: 100vh; /* Ensure header takes full height */
   }
 
   header img {
