@@ -241,11 +241,13 @@ header img {
 }
 
 .image-container {
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: column;
-  gap: 10px;
   background-color: #f6f4f4;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
 }
 
 .image-block {
@@ -257,8 +259,8 @@ header img {
 }
 
 .image-block img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 .center-text {
