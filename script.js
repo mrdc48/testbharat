@@ -27,3 +27,23 @@ document.querySelectorAll(".faq-question").forEach((item) => {
     icon.textContent = parent.classList.contains("active") ? "-" : "+";
   });
 });
+
+async function updateDateTime() {
+  try {
+    const response = await fetch("data.txt?nocache=" + new Date().getTime()); // Prevent caching
+    const text = await response.text();
+    const lines = text.trim().split("\n"); // Split lines from the file
+
+    if (lines.length >= 2) {
+      document.querySelector(".icon-text:nth-child(1) p").textContent =
+        lines[0].trim(); // Update date
+      document.querySelector(".icon-text:nth-child(2) p").textContent =
+        lines[1].trim(); // Update time
+    }
+  } catch (error) {
+    console.error("Error fetching date and time:", error);
+  }
+}
+
+setInterval(updateDateTime, 5000); // Check for updates every 5 seconds
+window.onload = updateDateTime;
