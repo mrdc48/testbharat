@@ -682,4 +682,9 @@ header img {
   .header-title::after {
     font-size: 5rem;
   }
+  header img {
+    max-height: 700px;
+    max-width: unset;
+    object-fit: contain;
+  }
 }
