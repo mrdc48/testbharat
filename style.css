@@ -8,6 +8,8 @@
 }
 body {
   background-color: black;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body:not(.icon-text) {
   font-family: Montserrat, sans-serif;
@@ -660,4 +662,6 @@ header img {
   .container {
     background-color: rgb(245 235 235 / 96%);
   }
+}
+@media (min-width: 1600px) {
 }
