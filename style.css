@@ -317,9 +317,19 @@ header img {
   text-align: center;
   transition: transform 0.3s ease;
 }
+
+.cards {
+  display: inline-grid;
+  align-items: center;
+  gap: 10px;
+}
+.fa-icon {
+  font-size: 4rem;
+  color: #007bff;
+}
+
 .cards h3 {
   font-size: 1.6rem;
-
   font-weight: normal;
   color: rgba(0, 0, 0, 0.878);
 }
@@ -688,6 +698,10 @@ header img {
   .header-title::after {
     font-size: 3.5rem;
   }
+  .header-title {
+    padding: 3rem;
+  }
+
   .header-content {
     width: 95%;
   }
@@ -704,6 +718,9 @@ header img {
   .header-title:before,
   .header-title::after {
     font-size: 4rem;
+  }
+  .header-title {
+    padding: 3rem 19rem;
   }
   header img {
     /* max-height: 700px; */
