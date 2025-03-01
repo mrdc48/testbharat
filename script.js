@@ -27,23 +27,33 @@ document.querySelectorAll(".faq-question").forEach((item) => {
     icon.textContent = parent.classList.contains("active") ? "-" : "+";
   });
 });
-
-async function updateDateTime() {
+async function updateDateTimeAndLink() {
   try {
-    const response = await fetch("data.txt?nocache=" + new Date().getTime()); // Prevent caching
+    const response = await fetch("data.txt?nocache=" + new Date().getTime()); // Prevent caching issues
     const text = await response.text();
     const lines = text.trim().split("\n"); // Split lines from the file
 
-    if (lines.length >= 2) {
-      document.querySelector(".icon-text:nth-child(1) p").textContent =
-        lines[0].trim(); // Update date
-      document.querySelector(".icon-text:nth-child(2) p").textContent =
-        lines[1].trim(); // Update time
+    if (lines.length >= 3) {
+      const date = lines[0].trim();
+      const time = lines[1].trim();
+      const link = lines[2].trim();
+
+      // Update the date and time in the header section
+      document.querySelector(".icon-text:nth-child(1) p").textContent = date; // Update date
+      document.querySelector(".icon-text:nth-child(2) p").textContent = time; // Update time
+      document.querySelector(".playbtn").href = link; // Update main button hyperlink
+      document.querySelector(".timer-cta").href = link; // Update main button hyperlink
+
+      // Update FAQ section with the new date and time
+      const faqAnswers = document.querySelectorAll(".faq-answer");
+      if (faqAnswers.length > 0) {
+        faqAnswers[0].innerHTML = `The workshop will be held on ${date}, at ${time} on Zoom. It will last around 2 hours.`;
+      }
     }
   } catch (error) {
-    console.error("Error fetching date and time:", error);
+    console.error("Error fetching date, time, and link:", error);
   }
 }
 
-setInterval(updateDateTime, 5000); // Check for updates every 5 seconds
-window.onload = updateDateTime;
+// Run the function initially and refresh every 5 seconds
+window.onload = updateDateTimeAndLink;
