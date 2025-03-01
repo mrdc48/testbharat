@@ -753,6 +753,7 @@ header img {
   }
   .header-title {
     padding: 3rem 19rem;
+    font-size: 3.5rem;
   }
   header img {
     max-width: unset;
