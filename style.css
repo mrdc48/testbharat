@@ -298,7 +298,7 @@ header img {
   background-size: 200%;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgb(245 243 243);
   padding: 5em 2em 14em 2em;
 }
 
@@ -314,20 +314,38 @@ header img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  display: inline-grid;
+  align-items: center;
+  gap: 10px;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
-.cards {
-  display: inline-grid;
-  align-items: center;
-  gap: 10px;
-}
 .fa-icon {
   font-size: 4rem;
   color: #007bff;
 }
-
+.fa-ban:before,
+.fa-cancel:before {
+  color: red;
+}
+.fa-video-camera:before,
+.fa-video:before {
+  color: rgb(211, 5, 211);
+}
+.fa-chart-line:before,
+.fa-line-chart:before {
+  color: rgb(150, 131, 131);
+}
+.fa-lightbulb:before {
+  color: yellow;
+}
+.fa-user-tie:before {
+  color: deepskyblue;
+}
+.fa-users:before {
+  color: purple;
+}
 .cards h3 {
   font-size: 1.6rem;
   font-weight: normal;
