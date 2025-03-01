@@ -718,6 +718,7 @@ header img {
   .header-title::after {
     font-size: 3.5rem;
   }
+
   .header-title {
     padding: 3rem;
   }
@@ -739,16 +740,26 @@ header img {
   .header-title::after {
     font-size: 4rem;
   }
+  header {
+    display: grid;
+    grid-template-columns: 500px 500px; /* Adjust columns */
+    justify-content: center;
+    grid-template-rows: auto 1fr; /* Ensure rows take space */
+    grid-template-areas:
+      "img content"
+      "founder content";
+    grid-gap: 20px;
+    padding: 4rem 10rem;
+  }
   .header-title {
     padding: 3rem 19rem;
   }
   header img {
-    /* max-height: 700px; */
     max-width: unset;
     object-fit: contain;
-    /* width: 70%; */
+    width: 100%;
   }
   .header-content {
-    width: 85%;
+    width: 100%;
   }
 }
