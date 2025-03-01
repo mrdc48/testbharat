@@ -662,29 +662,55 @@ header img {
   .container {
     background-color: rgb(245 235 235 / 96%);
   }
+  .timer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 1.6rem;
+  }
+  .timer-cta {
+    margin-top: unset;
+    border-radius: unset;
+  }
+  .heading {
+    font-size: 2.1rem;
+}
+.timer {
+  font-size: 2.5rem;
+  font-weight: normal;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1100px) {
   .header-title,
   .header-title:before,
   .header-title::after {
     font-size: 3.5rem;
   }
-}
-@media (min-width: 1650px) {
-  *,
-  :after,
-  :before {
-    font-size: 70%;
+  .header-content {
+    width: 95%;
   }
+  header {
+    justify-items: center;
+  }
+  header img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1500px) {
   .header-title,
   .header-title:before,
   .header-title::after {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   header img {
-    max-height: 700px;
+    /* max-height: 700px; */
     max-width: unset;
     object-fit: contain;
+    /* width: 70%; */
+  }
+  .header-content {
+    width: 85%;
   }
 }
